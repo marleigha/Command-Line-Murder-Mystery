@@ -31,9 +31,19 @@ Welcome to GAME NAME, a command line murder mystery survival game. Start by choo
 ## MILESTONES:
 Our Timeline!
 * tuesday: 2hrs(ish), project planning and writing expectations
-* wednesday: 2hrs – basic input and output on the command line– stats system for the characters
-* thursday: 2hrs – saving the decisions/the input of the user
+* wednesday: 2hrs – title/intro, then rudimentary choices saving the decisions/the input of the user
+* thursday: 2hrs – fleshing out and building on the story & choices (maybe adding rolls)
 * friday: polish !
 * Stretch goal: inventory & dialogue !
+
+The Order We're Executing in!
+* Start with one character! – (and it’s own stats)
+* Start with no rolls – just make the decision or don’t
+    * if we implement a roll it should only be like one!
+* Start with a simple story!
+    * Choose 1 to solve the mystery
+    * Choose 2 to wait for the killer to get you
+* Develop a database to track the story structure: we're thinking the story structure is done best in a tree/graph
+
 
 
