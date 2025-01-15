@@ -1,5 +1,5 @@
 # Upskill 2025 Project: Command-Line-Murder-Mystery
-
+made by ariel athena, emily, and marleigh !
 ### Project Pitch !
 Welcome to GAME NAME, a command line murder mystery survival game. Start by choosing one of four characters to play. You can make your choice based on each character’s statistics. From there, make choices for your character through table-top role-play game style rolls. Be careful, a failed roll might result in your demise! GAME NAME is a fun use of the skills we’ve developed in our computer science classes. We’re building this game in the command line with Python. 
 
