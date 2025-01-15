@@ -7,10 +7,16 @@ class Choice:
   def runChoice(self):
     print("**", self.text, "**")
     playerChoice = int(input("what do you choose: ")) -1
+    #first need to parse and make sure it's numeric, so probably best to have a try catch
+    
     #check and make sure the choice is an int, and in range of next choices
-    # if playerChoice not in range(len(self.nextChoices)):
-    # 	print("not very good input")
+    while playerChoice not in range(len(self.nextChoices)):
+      print("not very good input")
+      playerChoice = int(input("what do you choose: ")) -1
+    
     print(self.nextChoices[playerChoice].text)
+      
+    # 	print("not very good input")
     #self.nextChoices[playerChoice].runChoice()
         
 c2 = Choice('c2', "Mystery is solved! Someone's cat is loose", [])
