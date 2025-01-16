@@ -1,19 +1,16 @@
 # Upskill 2025 Project: Command-Line-Murder-Mystery
 made by Ariel Athena, Emily, and Marleigh !
 ### Project Pitch !
-Welcome to GAME NAME, a command line murder mystery survival game. Start by choosing one of four characters to play. You can make your choice based on each character’s statistics. From there, make choices for your character through table-top role-play game style rolls. Be careful, a failed roll might result in your demise! GAME NAME is a fun use of the skills we’ve developed in our computer science classes. We’re building this game in the command line with Python. 
+Welcome to GAME NAME, a command line murder mystery survival game. Start by allocating stat points to your character in 6 categories: strength, dexterity, constitution, intelligence, wisdom, and charisma. From there, make choices for your character through table-top role-play game style rolls and other decisions. Be careful, a failed roll might result in your demise! GAME NAME is a fun use of the skills we’ve developed in our computer science classes. We’re building this game in the command line with Python. 
 
 ## WIREFRAMES:
 
 #### Intro/Title Page! 
 * tells you the premise of the story
-* Character Picker where you can read the basic archetypes
-* Then choose which character you'll be
-* You don’t get to see the stats until after you choose them
+* Character stats allocation
 #### Main Loop:
 ##### Text Output
 * player reads and makes choices accordingly "A,b,c,d / 1,2,3,4"
-* Player dies → give you the option to restart
 * Player survives the night
 * Might add a time mechanic, if we have the time!
 * Or just you picked the right options to not die but haven’t figured out the mystery
@@ -22,11 +19,11 @@ Welcome to GAME NAME, a command line murder mystery survival game. Start by choo
 * Player responds to the choices, and you can:
     * Start dialogue & respond
     * Make checks & rolls
-    * Pick up item
-    * Esc: to view a menu with instructions
-    * Restart
-    * continue/enter: will allow you to move to the next text block (not to overwhelm the user)
-    * i: to view your inventory
+    * Extras:
+       * Pick up item
+       * Esc: to view a menu with instructions
+       * Restart
+       * i: to view your inventory
 
 ## MILESTONES:
 Our Timeline!
