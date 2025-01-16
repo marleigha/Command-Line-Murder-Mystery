@@ -70,6 +70,24 @@ class Choice:
             playerChoice = int(input("what do you choose: ")) -1
           
         self.succNextChoices[playerChoice].runChoice()
+
+class Player:
+  def __init__(self, name, description, strength, dexterity, constitution, intelligence, wisdom, charisma):
+      self.name = name
+      self.description = description
+      self.strength = strength
+      self.dexterity = dexterity
+      self.constitution = constitution
+      self. intelligence = intelligence
+      self.wisdom = wisdom
+      self.charisma = charisma
+       
+  def __str__(self):
+        return self.name
+
+runner = Player("the runner", "won three highschool track medals", 20, 20, 10, 7, 12, 15)
+print(runner)
+
      
 c4 = Choice(["you go home and eat with your family"], [], [], [], [], False, 0)
 c5 = Choice(["you take a nap and the killer gets you"], [], [], [], [], False, 0)
