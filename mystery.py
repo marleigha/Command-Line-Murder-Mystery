@@ -1,5 +1,6 @@
 from main import Choice
 from main import Player
+import pyfiglet
 
 runner = Player(0, 0, 0, 0, 0, 0)
 
@@ -73,8 +74,10 @@ simConvince = Choice(["You: Hey, it's never a good idea to split up in a situati
 
 simResponse = Choice(["You approach Simon to talk to him.\nSimon: I told you we shouldn’t have come here.\n"], ["gently disagree with him", "agree with him", "convince him to stay together (charisma roll)"], [], [simRej, simAgree, simConvince ], [], False, 0, '')
 
-start = Choice(["You enter a haunted house with your friends, Alvin, Simon, and Theodore. It was on a dare, and you just needed to last the night. Ghosts don’t exist anyways. But as you walk through the front door, it slamming shut behind you with finality, Theodore is no longer by your side. Before you get the chance to ask Simon and Alvin if they’ve seen him, a shriek resounds throughout the room. Theodore’s voice.\n"], ["talk to Simon", "try to follow the scream"], [], [simResponse, opt3], [], False, 0, '')
+start = Choice(["You enter a haunted house with your friends, Alvin, Simon, and Theodore. It was on a dare, and you just need to last the night. Ghosts don’t exist anyways. But as you walk through the front door, it slamming shut behind you with finality, Theodore is no longer by your side. Before you get the chance to ask Simon and Alvin if they’ve seen him, a shriek resounds throughout the room. Theodore’s voice.\n"], ["talk to Simon", "try to follow the scream"], [], [simResponse, opt3], [], False, 0, '')
 
+print(pyfiglet.figlet_format("Command Line Mystery"))
+print("Welcome to Command Line Mystery! You are the main character in a murder mystery game where you must make choices to either survive the night or solve the mystery. With table-top game style rolls influencing the outcomes of your decisions, you may not live long enough to find the killer!")
 runner.build_player()
 runner.display_stats()
 
