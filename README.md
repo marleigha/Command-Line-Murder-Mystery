@@ -1,7 +1,7 @@
 # Upskill 2025 Project: Command-Line-Murder-Mystery
 made by Ariel Athena, Emily, and Marleigh !
 ### Project Pitch !
-Welcome to GAME NAME, a command line murder mystery survival game. Start by allocating stat points to your character in 6 categories: strength, dexterity, constitution, intelligence, wisdom, and charisma. From there, make choices for your character through table-top role-play game style rolls and other decisions. Be careful, a failed roll might result in your demise! GAME NAME is a fun use of the skills we’ve developed in our computer science classes. We’re building this game in the command line with Python. 
+Welcome to COMMAND LINE MYSTERY, a command line murder mystery survival game. Start by allocating stat points to your character in 6 categories: strength, dexterity, constitution, intelligence, wisdom, and charisma. From there, make choices for your character through table-top role-play game style rolls and other decisions. Be careful, a failed roll might result in your demise! COMMAND LINE MYSTERY is a fun use of the skills we’ve developed in our computer science classes. We’re building this game in the command line with Python. 
 
 ## WIREFRAMES:
 
@@ -10,7 +10,7 @@ Welcome to GAME NAME, a command line murder mystery survival game. Start by allo
 * Character stats allocation inputted by the player
 #### Main Loop:
 ##### Text Output
-* player reads and makes choices accordingly "A,b,c,d / 1,2,3,4"
+* player reads and makes choices accordingly "1,2,3,4"
 * Player survives the night
 * Or just you picked the right options to not die but haven’t figured out the mystery
 * Player solves the mystery! by making the right choices
@@ -18,7 +18,7 @@ Welcome to GAME NAME, a command line murder mystery survival game. Start by allo
 * Player responds to the choices, and you can:
     * Start dialogue & respond
     * Make checks & rolls
-    * Extras (Not incorperated):
+    * Potential Future Additions:
        * Pick up item
        * Esc: to view a menu with instructions
        * Restart
