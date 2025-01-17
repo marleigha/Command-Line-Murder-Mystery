@@ -59,5 +59,8 @@ simResponse = Choice(["You approach Simon to talk to him.\nSimon: I told you we 
 
 start = Choice(["You enter a haunted house with your friends, Alvin, Simon, and Theodore. It was on a dare, and you just needed to last the night. Ghosts don’t exist anyways. But as you walk through the front door, it slamming shut behind you with finality, Theodore is no longer by your side. Before you get the chance to ask Simon and Alvin if they’ve seen him, a shriek resounds throughout the room. Theodore’s voice.\n"], ["talk to Simon", "try to follow the scream"], [], [simResponse, opt3], [], False, 0, '')
 
+runner.build_player()
+runner.display_stats()
+
 start.player_stats(runner)
 start.runChoice()
