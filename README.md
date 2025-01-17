@@ -7,19 +7,18 @@ Welcome to GAME NAME, a command line murder mystery survival game. Start by allo
 
 #### Intro/Title Page! 
 * tells you the premise of the story
-* Character stats allocation
+* Character stats allocation inputted by the player
 #### Main Loop:
 ##### Text Output
 * player reads and makes choices accordingly "A,b,c,d / 1,2,3,4"
 * Player survives the night
-* Might add a time mechanic, if we have the time!
 * Or just you picked the right options to not die but haven’t figured out the mystery
-* Player solves the mystery! by having the right items/making the right choices
+* Player solves the mystery! by making the right choices
 ##### Text Input
 * Player responds to the choices, and you can:
     * Start dialogue & respond
     * Make checks & rolls
-    * Extras:
+    * Extras (Not incorperated):
        * Pick up item
        * Esc: to view a menu with instructions
        * Restart
