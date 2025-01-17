@@ -1,7 +1,7 @@
 from main import Choice
 from main import Player
 
-runner = Player("the runner", "won three highschool track medals", 3, 2, -5, 4, 0, 6)
+runner = Player(0, 0, 0, 0, 0, 0)
 
 
 arr = ['strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma']
