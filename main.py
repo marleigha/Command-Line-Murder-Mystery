@@ -100,7 +100,7 @@ class Player:
     statPoints = 20
     arr = ["strength", "dexterity", "consitution", "intelligence", "wisdom", "charisma"] 
 
-    print("""Build your character!\nAllocate stat points to build your charater. These will impact your choices. \nThere are six stat categories: strength, dexterity, consitution, intelligence, wisdom, and charisma.\nAll stat choices are permanent, so choose wisely. XD""")
+    slow_type("""Build your character!\nAllocate stat points to build your charater. These will impact your choices. \nThere are six stat categories: strength, dexterity, consitution, intelligence, wisdom, and charisma.\nYou can give yourself advantages, or disavantages! Keep your input between -5 and 5 ! \nAll stat choices are permanent, so choose wisely. XD""")
 
     for i in range(len(arr)):   
       print("\n********\n")
@@ -133,7 +133,7 @@ class Player:
     print("\n********\n")
   
   def display_stats(self):
-     print("Here are your player's stats:")
+     slow_type("Here are your player's stats:")
      print("Strength: " , self.strength)
      print("Dexterity: " , self.dexterity)
      print("Constitution: " , self.constitution)
