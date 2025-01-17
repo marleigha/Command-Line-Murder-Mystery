@@ -1,6 +1,6 @@
 import sys,time,random
 
-typing_speed = 300 #wpm
+typing_speed = 600 #wpm
 def slow_type(t):
     for l in t:
         sys.stdout.write(l)
@@ -44,9 +44,9 @@ class Choice:
           for option in self.failOptions:
             print(str(x) + ".)", option + '\n')
             x+= 1
-            if len(self.failNextChoices) == 0:
-              print("*** fin ***")
-              return
+          if len(self.failNextChoices) == 0:
+            print("*** fin ***")
+            return
           playerChoice = int(input("what do you choose: ")) -1
   #   #first need to parse and make sure it's numeric, so probably best to have a try catch
 
@@ -141,18 +141,16 @@ class Player:
      print("Wisdom: " , self.wisdom)
      print("Charisma: " , self.charisma)
 
-runner = Player(0, 0, 0, 0, 0, 0)
-runner.build_player()
-runner.display_stats()
+# runner = Player(0, 0, 0, 0, 0, 0)
 
-arr = ['strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma']
-c4 = Choice(["you go home and eat with your family"], [], [], [], [], False, 0, "")
-c5 = Choice(["you take a nap and the killer gets you"], [], [], [], [], False, 0, "")
-c6 = Choice(["the cat becomes your friend! yippee"], [], [], [], [], False, 0, "")
-c3 = Choice(["you look elsewhere and find a cat"], ["pet cat"], [], [c6], [], False, 0, "")
-c7 = Choice(["you make the door worse and the killer gets you"], [], [], [], [], False, 0, "")
-c2 = Choice(["you break the door down! you're safe", "hit the gym, the door didn't budge."], ["go home", "take a nap"], ["try to break the door again", "look elsewhere"], [c4, c5], [c7, c3], True, 19, arr[0])
-c1 = Choice(["the door is locked"], ["break the door (you have to roll!)", "look elsewhere"], [], [c2, c3], [], False, 0, arr[3])
+# arr = ['strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma']
+# c4 = Choice(["you go home and eat with your family"], [], [], [], [], False, 0, "")
+# c5 = Choice(["you take a nap and the killer gets you"], [], [], [], [], False, 0, "")
+# c6 = Choice(["the cat becomes your friend! yippee"], [], [], [], [], False, 0, "")
+# c3 = Choice(["you look elsewhere and find a cat"], ["pet cat"], [], [c6], [], False, 0, "")
+# c7 = Choice(["you make the door worse and the killer gets you"], [], [], [], [], False, 0, "")
+# c2 = Choice(["you break the door down! you're safe", "hit the gym, the door didn't budge."], ["go home", "take a nap"], ["try to break the door again", "look elsewhere"], [c4, c5], [c7, c3], True, 19, arr[0])
+# c1 = Choice(["the door is locked"], ["break the door (you have to roll!)", "look elsewhere"], [], [c2, c3], [], False, 0, arr[3])
 
-c1.player_stats(runner)
-c1.runChoice()
+# c1.player_stats(runner)
+# c1.runChoice()
